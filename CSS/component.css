@@ -1,0 +1,111 @@
+/* Start Container */
+
+.container {
+  padding: 0 15px;;
+  margin: auto;
+}
+
+/* Small Screens */
+@media (min-width: 768px ) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px ) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Container */
+
+/* Satrt Main Header */
+
+.main-header {
+  text-align: center
+}
+
+.main-header h2 {
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  position: relative;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.main-header h2::before,
+.main-header h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.main-header h2::before {
+  height: 2px;
+  bottom: -30px;
+  background-color: #333;
+  width: 120px;
+}
+
+.main-header h2::after {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  bottom: -38px;
+  background-color: #fff;
+}
+
+.main-header p {
+  line-height: 2;
+  width: 550px;
+  max-width: 100%;
+  margin: 0 auto 100px;
+  color: var(--p-clr,#777);
+}
+
+/* End Main Header */
+
+/* Satrt Section Padding */
+
+section {
+  --main-padding: 100px 0 ;
+  padding: var(--main-padding, 100px 0 );
+}
+
+/* End Section Padding */
+
+/* Start Bullets */
+
+.bullets {
+  --main-clr: #19c8fa;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.bullets li {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.bullets li.active {
+  background-color: var(--main-clr,#19c8fa);
+  border-color: var(--main-clr,#19c8fa);
+}
+
+/* End Bullets */
