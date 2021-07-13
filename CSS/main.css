@@ -262,10 +262,22 @@ i.change-right {
   background-color: var(--main-clr, #19c8fa);
 }
 
-@media (max-width: 767px) {
+@media (max-height: 300px) {
+  div.landing {
+    height: 180vh
+  }
+}
 
+@media (max-height: 400px) {
+  .landing {
+    height: 150vh
+  }
+}
+
+
+@media (max-height: 600px) {
   .landing .overlay .text {
-    padding: 10px;
+    padding: 30px;
   }
   .landing .overlay .text .content h2 {
     font-size: 20px;
