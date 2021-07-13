@@ -262,6 +262,19 @@ i.change-right {
   background-color: var(--main-clr, #19c8fa);
 }
 
+@media (max-width: 767px) {
+
+  .landing .overlay .text {
+    padding: 10px;
+  }
+  .landing .overlay .text .content h2 {
+    font-size: 20px;
+  }
+  header .container {
+    min-height: 73px;
+  }
+}
+
 /* End Landing */
 
 /* Start Services */
