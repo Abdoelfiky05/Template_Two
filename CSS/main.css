@@ -157,7 +157,7 @@ header .container nav .form i {
 /* Start Landing */
 
 .landing {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #1f2021;
   background-image: url("../Images/landing.jpg");
   background-size: cover;
@@ -182,12 +182,13 @@ header .container nav .form i {
   width: 50%;
   padding: 50px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .landing .overlay .text .content {
   color: #fff;
   max-width: 500px;
+  margin-left: 20px;
 }
 
 @media (max-width: 768px) {
@@ -199,7 +200,7 @@ header .container nav .form i {
 @media (max-width: 767px) {
   .landing .overlay .text .content {
     max-width: 100%;
-    padding-left: 0 !important;
+    margin-left: 0;
   }
 }
 
@@ -222,11 +223,6 @@ i[class*="change"] {
   transform: translatey(-50%);
 }
 
-@media (max-width: 1230px) {
-  .landing .overlay .text .content {
-    padding-left: 15px;
-  }
-}
 
 i.change-left {
   left: 30px;
@@ -260,30 +256,24 @@ i.change-right {
 
 .overlay ul li.active {
   background-color: var(--main-clr, #19c8fa);
+  border-color: var(--main-clr,#19c8fa)
 }
 
-@media (max-height: 300px) {
-  div.landing {
-    height: 180vh
-  }
-}
-
-@media (max-height: 400px) {
-  .landing {
-    height: 150vh
+@media (max-height: 500px) {
+  .landing  {
+    min-height: 200vh;
   }
 }
 
+@media (max-width: 500px) {
+  .landing  {
+    min-height: 110vh;
+  }
+}
 
-@media (max-height: 600px) {
-  .landing .overlay .text {
-    padding: 30px;
-  }
-  .landing .overlay .text .content h2 {
-    font-size: 20px;
-  }
-  header .container {
-    min-height: 73px;
+@media (max-width: 350px) {
+  .landing  {
+    min-height: 130vh;
   }
 }
 
@@ -1024,7 +1014,7 @@ section.statistics .container .box p {
   background-color: var(--main-clr,#19c8fa);
   color: #fff;
   border: 1px solid #fff;
-  border-right: none;
+  border-left: none;
   text-transform: uppercase;
   padding: 10px 20px;
   width: 130px;
