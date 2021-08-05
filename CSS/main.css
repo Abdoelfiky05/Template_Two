@@ -361,7 +361,7 @@ section.design .image {
 
 section.design .design-text {
   background-color: var(--transparent-clr, rgb(15 116 143 / 70%));
-  padding: 50px;
+  padding: 50px 44px;
   color: #fff;
 }
 
@@ -587,7 +587,17 @@ section.design .design-text ul li::before {
 @media (max-width: 400px) {
 
   .video .text {
-    padding: 20px;
+    padding: 30px 18px 34px;
+  }
+
+  .video .text h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .video .text p {
+    margin-bottom: 20px;
+
   }
 }
 
