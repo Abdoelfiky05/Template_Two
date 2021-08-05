@@ -271,9 +271,9 @@ i.change-right {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .landing  {
-    min-height: 130vh;
+    min-height: 150vh;
   }
 }
 
